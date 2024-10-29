@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination, Mousewheel } from "swiper/modules";
+import { images } from "../assets/imageData.js";
 
 function Projects() {
   const projects = [
@@ -12,16 +13,6 @@ function Projects() {
       description: "Some App explaining text to catch attention.",
       liveLink: "",
       codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
-      imgs: [
-        {
-          title: "QR Code Scanner",
-          url: "src/assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_1.png",
-        },
-        {
-          title: "input page",
-          url: "src/assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_2.png",
-        },
-      ],
     },
     {
       id: "tax-max",
@@ -29,15 +20,6 @@ function Projects() {
       description: "Some App explaining text to catch attention.",
       liveLink: "https://taxmax.netlify.app/",
       codeLink: "https://github.com/franx-repos/final-project",
-      imgs: [
-        { title: "start page", url: "src/assets/img/tax-max/home_1.png" },
-        {
-          title: "partner and task slider",
-          url: "src/assets/img/tax-max/home_2.png",
-        },
-        { title: "register page", url: "src/assets/img/tax-max/register.png" },
-        { title: "profile page", url: "src/assets/img/tax-max/profile.png" },
-      ],
     },
     {
       id: "sowo-gv-onboarder",
@@ -45,16 +27,6 @@ function Projects() {
       description: "Some App explaining text to catch attention.",
       liveLink: "",
       codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
-      imgs: [
-        {
-          title: "QR Code Scanner",
-          url: "src/assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_1.png",
-        },
-        {
-          title: "input page",
-          url: "src/assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_2.png",
-        },
-      ],
     },
   ];
 
@@ -92,6 +64,7 @@ function Projects() {
                   className="project-links relative z-50 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
                   href={project.liveLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live App
                 </a>
@@ -99,6 +72,7 @@ function Projects() {
                   className="project-links relative z-50 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
                   href={project.codeLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   see code
                 </a>
@@ -131,7 +105,7 @@ function Projects() {
                     sensitivity: 1,
                   }}
                 >
-                  {project.imgs.map((img, index) => (
+                  {images[project.id].map((img, index) => (
                     <SwiperSlide
                       key={`${project.id}-preview-${index}`}
                       id={`${project.id}-preview-${index}`}
@@ -145,7 +119,6 @@ function Projects() {
                           className="h-5/6 rounded-lg border-4 border-green-400 hover:scale-125 transition-transform"
                           src={img.url}
                           alt=""
-                          // className="hover:scale-125 transition-transform"
                         />
                       </figure>
                     </SwiperSlide>
