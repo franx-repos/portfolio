@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import * as THREE from "three";
 import WAVES from "vanta/src/vanta.waves";
 
+import heroLogo from "../assets/icon-2.svg";
+
 function Hero() {
   useEffect(() => {
     const vantaEffect = WAVES({
@@ -34,11 +36,7 @@ function Hero() {
           id="home"
           className="flex flex-col h-screen justify-center items-center"
         >
-          <img
-            src="./src/assets/icon-2.svg"
-            alt="Logo"
-            className="h-24 lg:h-32"
-          />
+          <img src={heroLogo} alt="Logo" className="h-24 lg:h-32" />
           <h1 className="text-5xl font-frankyFont md:text-5xl lg:text-6xl text-white mt-5 px-5 font-light">
             Hello, I'm <span className="text-green-400">Frank</span>.
           </h1>
