@@ -71,7 +71,7 @@ function Projects() {
         <div
           key={`project-${index + 1}`}
           id={`project-${index + 1}`}
-          className={`flex h-screen w-full justify-center ${
+          className={`flex h-screen lg:w-full justify-center ${
             index % 2 === 0 ? "bg-stone-900" : "bg-stone-950"
           }`}
         >
