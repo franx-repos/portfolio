@@ -3,33 +3,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination, Mousewheel } from "swiper/modules";
-import { images } from "../assets/imageData.js";
+import { images } from "../data/imageData.js";
+import { projects } from "../data/projectsData.js";
 
 function Projects() {
-  const projects = [
-    {
-      id: "sowo-gv-onboarder",
-      heading: "Sowo GV Onboarder",
-      description: "Some App explaining text to catch attention.",
-      liveLink: "",
-      codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
-    },
-    {
-      id: "tax-max",
-      heading: "TaxMax Fullstack App",
-      description: "Some App explaining text to catch attention.",
-      liveLink: "https://taxmax.netlify.app/",
-      codeLink: "https://github.com/franx-repos/final-project",
-    },
-    {
-      id: "sowo-gv-onboarder",
-      heading: "Sowo GV Onboarder",
-      description: "Some App explaining text to catch attention.",
-      liveLink: "",
-      codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
-    },
-  ];
-
   return (
     <div
       id="projects"

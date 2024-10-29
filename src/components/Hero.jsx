@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import * as THREE from "three";
 import WAVES from "vanta/src/vanta.waves";
-
 import heroLogo from "../assets/icon-2.svg";
 
 function Hero() {

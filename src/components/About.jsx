@@ -1,28 +1,6 @@
-import jsIcon from "../assets/img/js.png";
-import cssIcon from "../assets/img/css.png";
-import htmlIcon from "../assets/img/html.png";
-import tailwindIcon from "../assets/img/tailwind.png";
-import reactIcon from "../assets/img/react.png";
-import nodeIcon from "../assets/img/node.png";
-import expressIcon from "../assets/img/express.png";
-import mongoIcon from "../assets/img/mongo.png";
-import githubIcon from "../assets/img/github.png";
-import electronIcon from "../assets/img/electron.png";
+import { images } from "../data/imageData.js";
 
 function About() {
-  const skills = [
-    { title: "javascript", img: jsIcon },
-    { title: "html", img: htmlIcon },
-    { title: "css", img: cssIcon },
-    { title: "tailwind", img: tailwindIcon },
-    { title: "react", img: reactIcon },
-    { title: "node.js", img: nodeIcon },
-    { title: "express.js", img: expressIcon },
-    { title: "mongo db", img: mongoIcon },
-    { title: "github", img: githubIcon },
-    { title: "electron.js", img: electronIcon },
-  ];
-
   return (
     <div
       id="about"
@@ -48,7 +26,7 @@ function About() {
           </p>
         </div>
         <div className="flex flex-wrap lg:w-1/2 lg:p-10 mt-10 lg:mt-0 mb-16 lg:mb-0 justify-around lg:justify-evenly">
-          {skills.map((skill, index) => (
+          {images.skills.map((skill, index) => (
             <figure
               key={index}
               id={`skill-${index + 1}`}
@@ -56,7 +34,7 @@ function About() {
             >
               <img
                 className="h-12 lg:h-16 w-fit rounded"
-                src={skill.img}
+                src={skill.url}
                 alt="image description"
               />
               <figcaption className="{/*neonText*/} text-white mt-3 text-center text-xs lg:text-sm font-semibold uppercase">
