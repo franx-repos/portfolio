@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex bg-stone-950 text-white font-frankyFont p-5">
+    <div className="flex bg-stone-900 text-white font-frankyFont p-5">
       Footer
     </div>
   );

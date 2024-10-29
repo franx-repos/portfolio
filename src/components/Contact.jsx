@@ -41,7 +41,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col h-screen justify-center items-center bg-stone-900 font-frankyFont text-white "
+      className="flex flex-col h-screen justify-center items-center bg-stone-950 font-frankyFont text-white "
     >
       <h2 className="section-heading z-40 text-4xl md:text-5xl lg:text-6xl text-white mt-5 font-bold">
         Contact
