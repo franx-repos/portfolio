@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.neonText {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #4ade80,
+    0 0 82px #4ade80, 0 0 92px #4ade80, 0 0 102px #4ade80, 0 0 151px #4ade80;
+}
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-flicker {
+  -webkit-animation: flickerAnimation 0.2s infinite;
+  -moz-animation: flickerAnimation 0.2s infinite;
+  -o-animation: flickerAnimation 0.2s infinite;
+  animation: flickerAnimation 0.2s infinite;
+}
+.section-heading::before {
+  position: absolute;
+  content: "";
+  border-bottom: 18px solid #4ade80;
+  width: 11rem;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  left: 2.575rem;
+  top: 3.9rem;
+  z-index: -1;
+  border-radius: 0.5rem;
+}
+.project-links::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #4ade80;
+  width: 70%;
+  bottom: 1px;
+  left: 15px;
+  display: block;
+  transform-origin: bottom;
+  transition: all 0.25s;
+  z-index: -1;
+  border-radius: 0 5px 5px 5px;
+}
+.project-links:hover::after {
+  height: 100%;
+}
+.scroll-to-top {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
