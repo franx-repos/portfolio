@@ -1,12 +1,14 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const [userFeedback, setUserFeedback] = useState("");
+
   const style = {
     input:
       "mt-2 text-white rounded-md block w-full p-2.5 bg-zinc-700 focus:outline-none focus:border focus:border-green-400 focus:mt-[6px]",
     button:
-      "mt-2 ml-auto bg-transparent hover:bg-green-400 text-2xl text-green-400 font-frankyFont hover:text-black font-medium py-2 px-8 border border-green-400 hover:border-transparent rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110",
+      "mt-2 lg:ml-auto bg-transparent hover:bg-green-400 text-md lg:text-xl text-green-400 font-frankyFont hover:text-black font-medium py-2 px-8 border border-green-400 hover:border-transparent rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110",
   };
 
   const inputs = [
@@ -26,9 +28,11 @@ function Contact() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setUserFeedback("Your message has been sent. Thank you.");
+          form.current.reset();
         },
         (error) => {
+          setUserFeedback("Sorry, something went wrong. Please try again.");
           console.log("FAILED...", error.text);
         }
       );
@@ -69,6 +73,9 @@ function Contact() {
             />
           </div>
           <div className="flex">
+            <p className="text-green-400 tracking-wide text-lg mt-5 px-5">
+              {userFeedback}
+            </p>
             <button type="submit" value="Send" className={style.button}>
               Send
             </button>
