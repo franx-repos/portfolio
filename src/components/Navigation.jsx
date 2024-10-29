@@ -34,10 +34,10 @@ function Navigation() {
       url: "#contact",
     },
   ];
-  console.log(githubLogo);
+
   return (
     <nav className="fixed w-full z-50 font-frankyFont">
-      <div className="w-full flex flex-wrap items-center p-1 lg:p-4 bg-stone-900 lg:bg-transparent">
+      <div className="w-full flex flex-wrap items-center p-1 lg:p-4 bg-stone-950 lg:bg-transparent">
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
@@ -63,7 +63,7 @@ function Navigation() {
             />
           </svg>
         </button>
-        <div className="flex ml-auto w-fit space-x-2 lg:space-x-4 justify-end">
+        <div className="flex ml-auto mr-2 w-fit space-x-2 lg:space-x-4 justify-end">
           {socialItems.map((item) => (
             <a
               key={item.title}
@@ -71,7 +71,7 @@ function Navigation() {
               target={item.url === "#contact" ? "_self" : "_blank"}
             >
               <img
-                className="w-8 hover:scale-125 transition-transform cursor-pointer"
+                className="w-6 lg:w-8 hover:scale-125 transition-transform cursor-pointer"
                 src={item.img}
                 alt={item.title}
               />

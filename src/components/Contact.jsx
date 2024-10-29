@@ -8,7 +8,7 @@ function Contact() {
     input:
       "mt-2 text-white rounded-md block w-full p-2.5 bg-zinc-700 focus:outline-none focus:border focus:border-green-400 focus:mt-[6px]",
     button:
-      "mt-2 lg:ml-auto bg-transparent hover:bg-green-400 text-md lg:text-xl text-green-400 font-frankyFont hover:text-black font-medium py-2 px-8 border border-green-400 hover:border-transparent rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110",
+      "max-h-fit mt-2 lg:ml-auto bg-transparent hover:bg-green-400 text-md lg:text-xl text-green-400 font-frankyFont hover:text-black font-medium py-2 px-8 border border-green-400 hover:border-transparent rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110",
   };
 
   const inputs = [
@@ -43,7 +43,7 @@ function Contact() {
       id="contact"
       className="flex flex-col h-screen justify-center items-center bg-stone-900 font-frankyFont text-white "
     >
-      <h2 className="section-heading z-50 text-4xl md:text-5xl lg:text-6xl text-white mt-5 font-bold">
+      <h2 className="section-heading z-40 text-4xl md:text-5xl lg:text-6xl text-white mt-5 font-bold">
         Contact
       </h2>
       <div className="flex w-4/5 mt-24 justify-center">

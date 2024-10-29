@@ -12,7 +12,7 @@ function Projects() {
       id="projects"
       className="flex flex-col items-center bg-stone-900 font-frankyFont"
     >
-      <h2 className="section-heading z-50 text-4xl md:text-5xl lg:text-6xl text-white mt-10 lg:mt-16 px-5 font-bold">
+      <h2 className="section-heading z-40 text-4xl md:text-5xl lg:text-6xl text-white mt-10 lg:mt-16 px-5 font-bold">
         Projects
       </h2>
 
@@ -38,7 +38,7 @@ function Projects() {
               </p>
               <div className="flex flex-col lg:mt-5">
                 <a
-                  className="project-links relative z-50 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
+                  className="project-links relative z-40 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +46,7 @@ function Projects() {
                   Live App
                 </a>
                 <a
-                  className="project-links relative z-50 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
+                  className="project-links relative z-40 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"

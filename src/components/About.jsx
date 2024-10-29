@@ -6,7 +6,7 @@ function About() {
       id="about"
       className="flex flex-col lg:h-screen justify-center items-center bg-stone-950 font-frankyFont"
     >
-      <h2 className="section-heading z-50 text-4xl md:text-5xl lg:text-6xl text-white mt-10 px-5 font-bold">
+      <h2 className="section-heading z-40 text-4xl md:text-5xl lg:text-6xl text-white mt-10 px-5 font-bold">
         About
       </h2>
       <div className="flex flex-col lg:flex-row w-4/5 mt-24">
