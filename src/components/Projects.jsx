@@ -56,7 +56,7 @@ function Projects() {
               </div>
             </div>
             <div className="flex flex-col h-1/2 lg:h-full lg:w-4/5 mt-16 lg:mt-0 bg-green-400 rounded-lg">
-              <div className="h-full w-full pt-3">
+              <div className="h-full w-full max-w-full pt-3">
                 <Swiper
                   key={`project-${index + 1}-slider`}
                   className="h-full"
