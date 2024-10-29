@@ -20,13 +20,13 @@ function Projects() {
         <div
           key={`project-${index + 1}`}
           id={`project-${index + 1}`}
-          className={`flex h-screen lg:w-full justify-center ${
+          className={`flex h-screen w-full justify-center ${
             index % 2 === 0 ? "bg-stone-900" : "bg-stone-950"
           }`}
         >
-          <div className="flex flex-col lg:flex-row lg:h-3/4 lg:w-4/5 lg:mt-24  p-5">
+          <div className="flex flex-col lg:flex-row lg:h-3/4 w-full lg:w-4/5 lg:mt-24  p-5">
             <div
-              className={`flex flex-col lg:w-1/5 h-fit ${
+              className={`flex flex-col w-full lg:w-1/5 h-fit ${
                 index % 2 === 0 ? "lg:order-0" : "lg:order-1 ml-5"
               }`}
             >
