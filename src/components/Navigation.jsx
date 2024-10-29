@@ -1,4 +1,7 @@
 import { useState } from "react";
+import githubLogo from "../assets/img/github-logo.svg";
+import linkedInLogo from "../assets/img/linkedin-logo.svg";
+import mailLogo from "../assets/img/mail.svg";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,21 +20,21 @@ function Navigation() {
   const socialItems = [
     {
       title: "github logo",
-      img: "src/assets/img/github-logo.svg",
+      img: githubLogo,
       url: "https://github.com/franx-repos",
     },
     {
       title: "linkedin logo",
-      img: "src/assets/img/linkedin-logo.svg",
+      img: linkedInLogo,
       url: "https://www.linkedin.com/in/frank-jaekel-foersterling/",
     },
     {
       title: "mail logo",
-      img: "src/assets/img/mail.svg",
+      img: mailLogo,
       url: "#contact",
     },
   ];
-
+  console.log(githubLogo);
   return (
     <nav className="fixed w-full z-50 font-frankyFont">
       <div className="w-full flex flex-wrap items-center p-1 lg:p-4 bg-stone-900 lg:bg-transparent">
