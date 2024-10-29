@@ -1,15 +1,26 @@
+import jsIcon from "../assets/img/js.png";
+import cssIcon from "../assets/img/css.png";
+import htmlIcon from "../assets/img/html.png";
+import tailwindIcon from "../assets/img/tailwind.png";
+import reactIcon from "../assets/img/react.png";
+import nodeIcon from "../assets/img/node.png";
+import expressIcon from "../assets/img/express.png";
+import mongoIcon from "../assets/img/mongo.png";
+import githubIcon from "../assets/img/github.png";
+import electronIcon from "../assets/img/electron.png";
+
 function About() {
   const skills = [
-    { title: "javascript", img: "src/assets/img/js.png" },
-    { title: "html", img: "src/assets/img/html.png" },
-    { title: "css", img: "src/assets/img/css.png" },
-    { title: "tailwind", img: "src/assets/img/tailwind.png" },
-    { title: "react", img: "src/assets/img/react.png" },
-    { title: "node.js", img: "src/assets/img/node.png" },
-    { title: "express.js", img: "src/assets/img/express.png" },
-    { title: "mongo db", img: "src/assets/img/mongo.png" },
-    { title: "github", img: "src/assets/img/github.png" },
-    { title: "electron.js", img: "src/assets/img/electron.png" },
+    { title: "javascript", img: jsIcon },
+    { title: "html", img: htmlIcon },
+    { title: "css", img: cssIcon },
+    { title: "tailwind", img: tailwindIcon },
+    { title: "react", img: reactIcon },
+    { title: "node.js", img: nodeIcon },
+    { title: "express.js", img: expressIcon },
+    { title: "mongo db", img: mongoIcon },
+    { title: "github", img: githubIcon },
+    { title: "electron.js", img: electronIcon },
   ];
 
   return (
