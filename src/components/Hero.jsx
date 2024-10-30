@@ -39,7 +39,7 @@ function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-frankyFont text-white tracking-wide mt-5 px-5 font-light">
             Hello, I'm <span className="text-green-400">Frank</span>.
           </h1>
-          <p className="text-3xl lg:text-4xl text-white text-center font-frankyFont tracking-wide mt-5 px-5 font-light">
+          <p className="text-3xl lg:text-5xl text-white text-center font-frankyFont tracking-wide mt-5 px-5 font-light">
             I'm a{" "}
             <span className="text-green-400">full stack web developer</span>{" "}
             from Leipzig.

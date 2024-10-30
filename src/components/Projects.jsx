@@ -24,18 +24,30 @@ function Projects() {
             index % 2 === 0 ? "bg-stone-900" : "bg-stone-950"
           }`}
         >
-          <div className="flex flex-col lg:flex-row lg:h-3/4 w-full lg:w-4/5 lg:mt-24  p-5">
+          <div className="flex flex-col lg:flex-row lg:h-3/4 w-full lg:w-4/5 lg:mt-24 p-5">
             <div
               className={`flex flex-col w-full lg:w-1/5 h-fit ${
-                index % 2 === 0 ? "lg:order-0" : "lg:order-1 ml-5"
+                index % 2 === 0 ? "lg:order-0" : "lg:order-1 lg:ml-5"
               }`}
             >
-              <h3 className="text-3xl lg:text-4xl text-white mt-10 lg:mt-5 px-5 font-bold">
+              <h3 className="text-3xl lg:text-4xl text-white mt-10 lg:mt-0 px-5 font-bold">
                 {project.heading}
               </h3>
-              <p className="text-2xl lg:text-3xl text-white tracking-wide mt-5 px-5 font-light">
+              <p className="flex flex-col text-xl lg:text-2xl text-white tracking-wide mt-5 px-5 font-light max-h-40 lg:max-h-72 overflow-y-scroll scrollbar-thin">
                 {project.description}
+                {project.additionalLinks &&
+                  project.additionalLinks.map((link, index) => (
+                    <a
+                      key={`ext-link-${index}`}
+                      className="mt-1 flex w-fit p-1 text-green-400 hover:bg-green-400 hover:text-stone-900"
+                      href={link.url}
+                      target="_blank"
+                    >
+                      {link.title}
+                    </a>
+                  ))}
               </p>
+
               <div className="flex flex-col lg:mt-5">
                 <a
                   className="project-links relative z-40 lg:text-xl text-white tracking-wide mt-5 lg:mt-12 px-5 py-2 font-semibold uppercase hover:text-stone-900"
@@ -93,7 +105,7 @@ function Projects() {
                           {img.title}
                         </figcaption>
                         <img
-                          className="h-5/6 rounded-lg border-4 border-green-400 hover:scale-125 transition-transform"
+                          className="h-5/6 rounded-lg border-l-4 border-r-4 border-green-400 hover:scale-125 transition-transform"
                           src={img.url}
                           alt=""
                         />
