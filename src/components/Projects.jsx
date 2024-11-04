@@ -75,7 +75,7 @@ function Projects() {
                   modules={[EffectCoverflow, Pagination, Mousewheel]}
                   grabCursor
                   centeredSlides
-                  initialSlide={1}
+                  initialSlide={0}
                   speed={900}
                   spaceBetween={-350}
                   slidesPerView="2"
@@ -84,7 +84,7 @@ function Projects() {
                     rotate: 0,
                     stretch: 0,
                     depth: 500,
-                    modifier: 1,
+                    modifier: 2,
                     slideShadows: false,
                   }}
                   pagination={{ clickable: true }}
