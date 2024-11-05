@@ -79,6 +79,11 @@ function Projects() {
                   speed={900}
                   spaceBetween={-350}
                   slidesPerView="2"
+                  breakpoints={{
+                    768: {
+                      slidesPerView: "1",
+                    },
+                  }}
                   effect="coverflow"
                   coverflowEffect={{
                     rotate: 0,
