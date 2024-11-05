@@ -77,11 +77,12 @@ function Projects() {
                   centeredSlides
                   initialSlide={0}
                   speed={900}
-                  spaceBetween={-350}
-                  slidesPerView="2"
+                  spaceBetween={0}
+                  slidesPerView="1"
                   breakpoints={{
                     768: {
                       slidesPerView: "1",
+                      // spaceBetween: "{0}",
                     },
                   }}
                   effect="coverflow"
