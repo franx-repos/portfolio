@@ -12,8 +12,6 @@ import sowoScreenshot_1 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Scree
 import sowoScreenshot_2 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_2.png";
 import sowoScreenshot_3 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_3.png";
 import sowoScreenshot_4 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_4.png";
-import sowoScreenshot_5 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_5.png";
-import sowoScreenshot_6 from "../assets/img/sowo-gv-onboarder/GV-Onboarder_Screenshot_6.png";
 import homePage_1 from "../assets/img/tax-max/home_1.png";
 import homePage_2 from "../assets/img/tax-max/home_2.png";
 import registerPage from "../assets/img/tax-max/register.png";
@@ -36,9 +34,7 @@ export const images = {
     { title: "qr scanner", url: sowoScreenshot_1 },
     { title: "input page", url: sowoScreenshot_2 },
     { title: "list page", url: sowoScreenshot_3 },
-    { title: "qr scanner mobile", url: sowoScreenshot_4 },
-    { title: "list page mobile", url: sowoScreenshot_5 },
-    { title: "input page mobile", url: sowoScreenshot_6 },
+    { title: "mobile", url: sowoScreenshot_4 },
   ],
   "tax-max": [
     { title: "start page", url: homePage_1 },
