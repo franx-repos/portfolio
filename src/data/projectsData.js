@@ -3,7 +3,7 @@ export const projects = [
     id: "sowo-gv-onboarder",
     heading: "Sowo GV Onboarder",
     description:
-      "React App to speed up the onboarding process at general assemblies. Deployed with Electron.js and Capacitor.",
+      "React App to speed up the onboarding process at general assemblies. Also available as progressive web app, installable via Google Chrome.",
     liveLink: "https://sowo-gv-onboarder.netlify.app/",
     codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
   },
