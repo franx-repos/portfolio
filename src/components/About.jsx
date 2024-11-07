@@ -16,13 +16,13 @@ function About() {
             {"</>"}
           </h3>
           <p className="lg:p-5 text-2xl text-white lg:text-center mt-5 font-light">
-            Fully committed to the philosophy of life-long learning, I’m a full
-            stack developer with a deep passion for JavaScript, React and all
-            things web development. The unique combination of creativity, logic,
-            technology and never running out of new things to discover, drives
-            my excitement and passion for web development. When I'm not at my
-            computer I like to spend my time reading, keeping fit and playing
-            guitar.
+            I'm a dedicated full-stack developer and a firm believer in
+            life-long learning. With a deep passion for JavaScript, React, and
+            all things web development, I thrive on the blend of creativity,
+            logic, and technology that the field offers. The endless
+            opportunities to explore new ideas and tools keep my excitement for
+            web development alive. Outside of coding, I enjoy quality time with
+            my family.
           </p>
         </div>
         <div className="flex flex-wrap lg:w-1/2 lg:p-10 mt-10 lg:mt-0 mb-16 lg:mb-0 justify-around lg:justify-evenly">
