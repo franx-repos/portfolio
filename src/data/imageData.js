@@ -34,7 +34,7 @@ export const images = {
     { title: "electron.js", url: electronIcon },
   ],
   "php-backend-demo": [
-    { title: "bog page", url: blogPage },
+    { title: "blog page", url: blogPage },
     { title: "registration page", url: registrationPage },
     { title: "user backend", url: userBackend },
   ],
