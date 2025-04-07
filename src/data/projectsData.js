@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: "PHP backend demo",
+    heading: "PHP backend demo",
+    description:
+      "A blog project for PHP backend demonstration. Written without framework in PHP(OOP).",
+    liveLink: "https://php-backend-demo.onrender.com/",
+    codeLink: "#",
+  },
+  {
     id: "sowo-gv-onboarder",
     heading: "Sowo GV Onboarder",
     description:
@@ -20,11 +28,4 @@ export const projects = [
     liveLink: "https://taxmax.netlify.app/",
     codeLink: "https://github.com/franx-repos/final-project",
   },
-  // {
-  //   id: "sowo-gv-onboarder",
-  //   heading: "Sowo-GV-Onboarder",
-  //   description: "Some App explaining text to catch attention.",
-  //   liveLink: "",
-  //   codeLink: "https://github.com/franx-repos/sowo-gv-onboarder",
-  // },
 ];

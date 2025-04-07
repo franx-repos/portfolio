@@ -16,6 +16,9 @@ import homePage_1 from "../assets/img/tax-max/home_1.png";
 import homePage_2 from "../assets/img/tax-max/home_2.png";
 import registerPage from "../assets/img/tax-max/register.png";
 import profilePage from "../assets/img/tax-max/profile.png";
+import blogPage from "../assets/img/php-backend-demo/blog-page.png";
+import registrationPage from "../assets/img/php-backend-demo/registration-page.png";
+import userBackend from "../assets/img/php-backend-demo/user-backend.png";
 
 export const images = {
   skills: [
@@ -29,6 +32,11 @@ export const images = {
     { title: "mongo db", url: mongoIcon },
     { title: "github", url: githubIcon },
     { title: "electron.js", url: electronIcon },
+  ],
+  "php-backend-demo": [
+    { title: "bog page", url: blogPage },
+    { title: "registration page", url: registrationPage },
+    { title: "user backend", url: userBackend },
   ],
   "sowo-gv-onboarder": [
     { title: "qr scanner", url: sowoScreenshot_1 },
