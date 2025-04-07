@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: "PHP backend demo",
+    id: "php-backend-demo",
     heading: "PHP backend demo",
     description:
       "A blog project for PHP backend demonstration. Written without framework in PHP(OOP).",
