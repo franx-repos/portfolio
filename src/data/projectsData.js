@@ -5,7 +5,7 @@ export const projects = [
     description:
       "A blog project for PHP backend demonstration. Written without framework in PHP(OOP).",
     liveLink: "https://php-backend-demo.onrender.com/",
-    codeLink: "#",
+    codeLink: "https://github.com/franx-repos",
   },
   {
     id: "sowo-gv-onboarder",
