@@ -4,7 +4,9 @@ import htmlIcon from "../assets/img/html.png";
 import tailwindIcon from "../assets/img/tailwind.png";
 import reactIcon from "../assets/img/react.png";
 import nodeIcon from "../assets/img/node.png";
+import phpIcon from "../assets/img/php.png";
 import expressIcon from "../assets/img/express.png";
+import sqlIcon from "../assets/img/mySQL.png";
 import mongoIcon from "../assets/img/mongo.png";
 import githubIcon from "../assets/img/github.png";
 import electronIcon from "../assets/img/electron.png";
@@ -27,8 +29,10 @@ export const images = {
     { title: "css", url: cssIcon },
     { title: "tailwind", url: tailwindIcon },
     { title: "react", url: reactIcon },
+    { title: "php", url: phpIcon },
     { title: "node.js", url: nodeIcon },
     { title: "express.js", url: expressIcon },
+    { title: "mySQL", url: sqlIcon },
     { title: "mongo db", url: mongoIcon },
     { title: "github", url: githubIcon },
     { title: "electron.js", url: electronIcon },
